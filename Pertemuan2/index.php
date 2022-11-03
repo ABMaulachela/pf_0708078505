@@ -14,26 +14,26 @@
 // variabel
 // variabel tidak boleh diawali dengan angka, tetapi boleh mengandung angka
 
-$nama = "Adam Bachtiar Maulachela";
-echo "Hello, Nama saya $nama";
+//$nama = "Adam Bachtiar Maulachela";
+//echo "Hello, Nama saya $nama" ;
 
 // Operator
 // aritmatika
 // * / + - %
-$x = 10;
-$y = 20;
-echo $x + $y;
+//$x = 10;
+//$y = 20;
+//echo $x + $y;
 
 // penggabungan string / concatenation / concat
 // .
-$nama_depan = "Adam";
-$nama_belakang = "Bachtiar";
-echo $nama_depan . " " . $nama_belakang;
+// $nama_depan = "Adam";
+// $nama_belakang = "Bachtiar";
+// echo $nama_depan . " " . $nama_belakang;
 
 // Assignment
 // =, +=, -=, *=, /=, %=, .=
 $x = 1;
-$x += 5;
+$x /= 5;
 echo $x;
 $nama .= $nama_depan;
 $nama .= " ";

@@ -26,19 +26,19 @@
 
 // penggabungan string / concatenation / concat
 // .
-// $nama_depan = "Adam";
-// $nama_belakang = "Bachtiar";
+//  $nama_depan = "Adam";
+//  $nama_belakang = "Bachtiar";
 // echo $nama_depan . " " . $nama_belakang;
 
 // Assignment
 // =, +=, -=, *=, /=, %=, .=
-$x = 1;
-$x /= 5;
-echo $x;
-$nama .= $nama_depan;
-$nama .= " ";
-$nama .= $nama_belakang;
-echo $nama;
+// $x = 1;
+// $x %= 5; // $x = $x % 5;
+// echo $x;
+// $nama .= $nama_depan;
+// $nama .= " ";
+// $nama .= $nama_belakang;
+// echo $nama;
 
 // Perbandingan 
 // < > <= >= == !=
@@ -50,8 +50,8 @@ var_dump(1 === "1");
 
 // Logika
 // &&, ||, !
-$x = 10;
-var_dump($x < 20 && $x % 2 == 0);
+$x = 20;
+var_dump($x < 20 || $x % 2 == 0);
 
 
 

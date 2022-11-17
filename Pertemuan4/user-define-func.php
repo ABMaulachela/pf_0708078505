@@ -11,6 +11,7 @@
   <title>Latihan Function</title>
 </head>
 <body>
-  <h1><?= salam("Pagi", "Administrator"); ?></h1>
+  <h1><?= salam("Siang", "Mahasiswa"); ?></h1>
+  <!-- <h1>Selamat Pagi Administrator</h1> -->
 </body>
 </html>

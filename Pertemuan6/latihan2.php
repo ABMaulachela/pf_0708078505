@@ -10,9 +10,9 @@
   // key-nya adalah string yang kita buat sendiri
   $mahasiswa = [
     ["nama" => "Adam Bachtiar",
-                "nim" => "0708078505",
-                "email" => "adambachtiar@undikma.ac.id",
-                "jurusan" => "PTI"
+     "nim" => "0708078505",
+     "email" => "adambachtiar@undikma.ac.id",
+     "jurusan" => "PTI"
     ],
     ["nama" => "Bachtiar",
                 "nim" => "0708078505",

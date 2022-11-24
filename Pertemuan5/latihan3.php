@@ -1,10 +1,16 @@
 <?php 
+// array multidimensi
+// array di dalam array
   $mahasiswa = [
   ["Adam Bachtiar", "0708078505", "PTI", "adambachtiar@undikma.ac.id"],
-  ["Adam Bachtiar", "0708078505", "PTI", "adambachtiar@undikma.ac.id"],
+  ["Citra", "0708078505", "PTI", "citrra@undikma.ac.id"],
   ["0708078505", "Adam Bachtiar", "PTI", "adambachtiar@undikma.ac.id"]
 ];
 
+// echo $mahasiswa[2][0];
+// echo $mahasiswa[2][1];
+// echo $mahasiswa[2][2];
+// echo $mahasiswa[2][3];
 ?>
 
 <!DOCTYPE html>

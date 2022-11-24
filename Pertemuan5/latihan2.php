@@ -2,7 +2,7 @@
 // melakukan perulangan pada array
 // for / foreach
 $angka = [2,3,45,23,5,1,5,6,8,77,12];
-
+$numbers = [2,3,45,23,5,1,5,6,8,77,12];
 
 ?>
 
@@ -32,8 +32,8 @@ $angka = [2,3,45,23,5,1,5,6,8,77,12];
 
   <div class="clear"></div>
 
-  <?php foreach( $angka as $a ) : ?>
-    <div class="kotak"><?= $a; ?></div>
+  <?php foreach( $numbers as $number ) : ?>
+    <div class="kotak"><?= $number; ?></div>
   <?php endforeach; ?>
 </body>
 </html>

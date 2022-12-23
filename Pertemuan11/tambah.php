@@ -1,40 +1,28 @@
 <?php 
-// koneksi ke DB
-$conn = mysqli_connect("localhost", "root", "", "db_mhs");
-
-
-// cek apakah tombol submit sudah ditekan atau belum
-if( isset($_POST["submit"]) ) {
-  // cek data dari form   
-  //var_dump($_POST);
-
-  // ambil data dari setiap elemen dalam form
-  $nim = $_POST["nim"];
-  $nama = $_POST["nama"];
-  $email = $_POST["email"];
-  $jurusan = $_POST["jurusan"];
-  $gambar = $_POST["gambar"];
-
-  // query insert data
-  $query = "INSERT INTO mahasiswa
-            VALUES
-            ('','$nama', '$nim', '$email', '$jurusan', '$gambar')
-            ";
-  mysqli_query($conn, $query);
-
-  // cek apakah data berhasil ditambahkan atau tidak
-  //var_dump(mysqli_affected_rows($conn));
+  require 'functions.php';
   
-  if( mysqli_affected_rows($conn) > 0 ) {
-    echo "Data Berhasil ditambahkan";
-  } else {
-    echo "Data Gagal Ditambahkan";
-    echo "<br>";
-    echo mysqli_error($conn);
+  // cek apakah tombol submit sudah ditekan atau belum
+  if( isset($_POST["submit"]) ) {
+    
+    // cek apakah data berhasil ditambahkan atau tidak
+    if( tambah($_POST) > 0 ) {
+      echo "
+        <script>
+          alert('data berhasil ditambahkan!');
+          document.location.href = 'index.php';
+        </script>
+      ";
+    } else {
+      echo "
+        <script>
+          alert('data gagal ditambahkan!');
+          document.location.href = 'index.php';
+        </script>
+      ";
+    }
   }
-}
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
